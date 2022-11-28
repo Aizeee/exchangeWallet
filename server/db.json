@@ -1,0 +1,35 @@
+{
+  "rates":[
+    {
+      "primaryCurrency": "USD",
+      "secondaryCurrency": "SGD",
+      "rate": 1.4
+    },
+    {
+      "primaryCurrency": "USD",
+      "secondaryCurrency": "YEN",
+      "rate": 1.8
+    },
+    {
+      "primaryCurrency": "USD",
+      "secondaryCurrency": "GBP",
+      "rate": 1.23
+    }
+  ],
+  "wallet":[
+    {
+      "wallet": 1,
+      "currency": {
+        "USD" : 500,
+        "SGD" : 500
+      }
+    },
+    {
+      "wallet": 2,
+      "currency": {
+        "USD" : 1000,
+        "SGD" : 1000
+      }
+    }
+  ]
+}

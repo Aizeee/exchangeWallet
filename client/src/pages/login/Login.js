@@ -1,5 +1,5 @@
-import React from 'react'
-import "./login.css"
+import React from "react";
+import "./login.css";
 
 export default function Login() {
   return (
@@ -8,9 +8,10 @@ export default function Login() {
         <span>
           <h2>login</h2>
         </span>
-        <span><h2>login</h2></span>
-
+        <span>
+          <h2>login</h2>
+        </span>
       </section>
     </div>
-  )
+  );
 }
