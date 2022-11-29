@@ -1,13 +1,33 @@
+.allCards{
+    width: 45vw;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: centre;
+    background-color: red;
+}
+
+
 .card {
     background-color: rgb(132, 145, 221);
-    width: 500px;
+    width: auto;
     margin-bottom: 30px;
+    
 
 }
 
 .leftRight{
     display: flex;
+    justify-content: space-between;
+    background-color: aqua;
 }
 .buttonDiv{
-    margin-left: 150px;
+    position: relative;
+}
+
+.buttonDelete{
+    position: absolute;
+    right: 0;
+
 }

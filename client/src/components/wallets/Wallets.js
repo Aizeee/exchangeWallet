@@ -34,9 +34,13 @@ export default function Wallets(props) {
           <h5>YEN: Y{walletContainer.currency?.YEN}</h5>
         </div>
         <div className="buttonDiv">
-          <button onClick={handleExchange}> exchange currency</button>
+          <button className="exchangeButton" onClick={handleExchange}>
+            exchange currency
+          </button>
           <br />
-          <button onClick={handleDelete}>delete wallet</button>
+          <button className="buttonDelete" onClick={handleDelete}>
+            delete wallet
+          </button>
         </div>
       </div>
     </div>
@@ -45,7 +49,7 @@ export default function Wallets(props) {
   return (
     <>
       <h3>John</h3>
-      <div className="wallets">{element}</div>
+      <div className="allCards">{element}</div>
     </>
   );
 }
