@@ -13,7 +13,7 @@
     {
       "primaryCurrency": "USD",
       "secondaryCurrency": "GBP",
-      "rate": 1.23
+      "rate": 1.2
     }
   ],
   "wallet":[
@@ -21,7 +21,7 @@
       "wallet": 1,
       "currency": {
         "USD" : 500,
-        "SGD" : 500,
+        "SGD" : 50,
         "YEN" : 0
       }
     },

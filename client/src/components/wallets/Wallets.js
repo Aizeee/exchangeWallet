@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
+import api from "../../api/api";
 import "./wallet.css";
 
 export default function Wallets(props) {
   useEffect(() => {
     const fetchApi = async () => {
       try {
-        let response = await fetch("http://localhost:3500/wallet");
-        if (!response.ok) throw Error("Did not receive expected data");
-        response = await response.json();
-        props.setWalletData(response);
+        let response = await api.get("/wallet");
+        props.setWalletData(response.data);
       } catch (err) {
         console.log(err);
       }
