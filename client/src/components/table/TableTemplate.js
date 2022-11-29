@@ -1,17 +1,18 @@
 import Table from "react-bootstrap/Table";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import api from "../../api/api";
 
 export default function TablePagination({ data }) {
   let count = 0;
-  const API_URL = "/rates";
+  const API_URL = "http://localhost:3500/rates";
   const [ratee, setRatee] = useState([]);
   useEffect(() => {
     const fetchApi = async () => {
       try {
-        let response = await api.get("/rates");
-        setRatee(response.data);
+        let response = await fetch(API_URL);
+        if (!response.ok) throw Error("Did not receive expected data");
+        response = await response.json();
+        setRatee(response);
         console.log(ratee);
         console.log(" rate");
       } catch (err) {
