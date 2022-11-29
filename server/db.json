@@ -8,7 +8,7 @@
     {
       "primaryCurrency": "USD",
       "secondaryCurrency": "YEN",
-      "rate": 1.8
+      "rate": 1.812
     },
     {
       "primaryCurrency": "USD",
@@ -21,14 +21,16 @@
       "wallet": 1,
       "currency": {
         "USD" : 500,
-        "SGD" : 500
+        "SGD" : 500,
+        "YEN" : 0
       }
     },
     {
       "wallet": 2,
       "currency": {
         "USD" : 1000,
-        "SGD" : 1000
+        "SGD" : 1000,
+        "YEN" : 0
       }
     }
   ]

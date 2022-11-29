@@ -1,0 +1,13 @@
+.card {
+    background-color: rgb(132, 145, 221);
+    width: 500px;
+    margin-bottom: 30px;
+
+}
+
+.leftRight{
+    display: flex;
+}
+.buttonDiv{
+    margin-left: 150px;
+}

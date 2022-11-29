@@ -14,23 +14,24 @@ export default function TablePagination({ data }) {
         response = await response.json();
         setRatee(response);
         console.log(ratee);
+        console.log(" rate");
       } catch (err) {
         console.log(err);
       }
     };
-    const interval = setInterval(() => {
+    /* const interval = setInterval(() => {
       fetchApi();
-      console.log("This will run every 3 seconds!");
-    }, 3000);
+      console.log("This will run every 3 seconds!")
+    }, 3000); */
 
     fetchApi();
-    return () => clearInterval(interval);
+    /* return () => clearInterval(interval); */
   }, []);
 
   const element = ratee.map((item) => {
     count += 1;
     return (
-      <tr>
+      <tr key={count}>
         <th scope="row">{count}</th>
         <td>{item.primaryCurrency}</td>
         <td>{item.secondaryCurrency}</td>

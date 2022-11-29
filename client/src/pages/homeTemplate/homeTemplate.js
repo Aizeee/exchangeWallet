@@ -8,7 +8,7 @@ export default function Home(props) {
   return (
     <>
       <NavbarLogin />
-      <div className="hero"></div>
+
       <div className="mainPage">
         <h1>Home</h1>
         <button>
